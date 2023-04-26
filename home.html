@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>토익 정보 비교 사이트</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: lightblue;
+            width: 100%;
+            margin: 0;
+            height: 180px;
+            padding: 0;
+        }
+        header ul{
+            text-align: center;
+        }
+
+        #logo{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            position: relative;
+            top: 110px;
+            height: 30px
+        }
+        ul li{
+            margin-top: 10px;
+            display: inline;
+            font-size: 15pt;
+            letter-spacing: 10px;
+            padding-right: 50px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <p id="logo">사이트 로고 위치입니다.</p>
+        <ul>
+            <li>HOME</li>
+            <li>초급</li>
+            <li>중급</li>
+            <li>상급</li>
+        </ul>
+    </header>
     <aside id="left">
         <h1>Level Test</h1>
         <button type="button" onclick="location.href='#'">하러가기</button> <!-- 위치설정 필요-->
