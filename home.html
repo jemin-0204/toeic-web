@@ -1,75 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>토익 정보 비교 사이트</title>
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        header{
-            background-color: lightblue;
-            width: 100%;
-            margin: 0;
-            height: 180px;
-            padding: 0;
-        }
-        header ul{
-            text-align: center;
-        }
-
-        #logo{
-            padding: 0;
-            margin: 0;
-        }
-        ul{
-            border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            position: relative;
-            top: 110px;
-            height: 30px
-        }
-        ul li{
-            margin-top: 10px;
-            display: inline;
-            font-size: 15pt;
-            letter-spacing: 10px;
-            padding-right: 50px;
-        }
-    </style>
+    <title>Hanyang TOEIC</title>
+    <link type="text/css" rel="stylesheet" href="mystyle.css">
 </head>
 <body>
     <header>
-        <p id="logo">사이트 로고 위치입니다.</p>
+        <p id="logo">
+            <img src="logo.png" width="300" height="100"></a>
+        </p>
         <ul>
-            <li>HOME</li>
-            <li>초급</li>
-            <li>중급</li>
-            <li>상급</li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#">초급</a></li> <!-- 위치설정 필요 -->
+            <li><a href="#">중급</a></li> <!-- 위치설정 필요 -->
+            <li><a href="#">상급</a></li> <!-- 위치설정 필요 -->
         </ul>
     </header>
-    <aside id="left">
-        <h1>Level Test</h1>
-        <button type="button" onclick="location.href='#'">하러가기</button> <!-- 위치설정 필요-->
-        <button type="button" onclick="location.href='#'">건너뛰기</button> <!-- 위치설정 필요-->
-    </aside>
-    <aside id="right">
+    <aside id="login">
         <h1>Log In</h1>
         <form action="..." method="post">
-            아이디: <input type="text" id="id"><br>
-            비밀번호: <input type="password" id="password">
+            아이디 <input type="text" id="id"><br>
+            비밀번호 <input type="password" id="password">
             <input type="submit" value="로그인"><br>
             <a href="#" target="_self">회원가입</a> <!-- 위치설정 필요 -->
         </form>
     </aside>
-    <section id="tip">
-        <h1>TOEIC Tip</h1>
-        <!-- 자료조사 내용 추가 -->
-    </section>
-    <section id="free">
-        <h1>무료 콘텐츠</h1>
-        <!-- 자료조사 내용 추가 -->
-    </section>
+    <aside id="test">
+        <h1>Level Test</h1>
+        <button type="button" onclick="location.href='#'">하러가기</button> <!-- 위치설정 필요-->
+        <button type="button" onclick="location.href='#'">건너뛰기</button> <!-- 위치설정 필요-->
+    </aside>
+    <div class="container">
+        <section id="tip">
+          <h1>TOEIC Tip</h1>
+          <li><a href="https://velog.io/@joshkim1201/%ED%86%A0%EC%9D%B5-990%EC%A0%90-%ED%95%A9%EA%B2%A9%EC%88%98%EA%B8%B0">토익 990점 합격수기</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_board/B_TOEIC_secret&date_filter=04.25&uid=803138&best=1">700점대 올라가고 싶은 토린이들 주목~!</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_board/B_TOEIC_secret&date_filter=04.25&uid=768810&best=1">토익 섹션별 공부 비법!</a></li>
+          <li><a href="https://www.toeicstory.co.kr/category/PLUS">팁</a></li>
+          <li><a href="https://www.toeicstory.co.kr/category/TOEIC%20Inside">수강생 인터뷰</a></li>
+          <li><a href="https://www.toeicstory.co.kr/category/NOTICE">YBM 이벤트 및 각종 정보</a></li>
+
+        </section>
+        <section id="free">
+          <h1>무료 콘텐츠</h1>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_study/drc">매일 토익 RC 풀기 + LC 풀기</a></li>
+          <li><a href="https://www.hackers.co.kr/?mod=fullservice_toeic_voca&keywd=heng_submain_lnb_toeic_voca&logger_kw=heng_submain_lnb_toeic_voca">정기 토익시험 기출단어</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/voca_game/voca_new/voca_2016&keywd=haceng_submain_lnb_toeic_voca_2016&logger_kw=haceng_submain_lnb_toeic_voca_2016">해커스토익 기출보카 TEST</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/toeic_basic_listening">왕기초 리스닝 [무료 강의]</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/toeic_startmovie/staFrt_2020/start_2020_event&keywd=heng_toeiclectap2_startRC_220504&logger_kw=heng_toeiclectap2_startRC_220504">입문 리딩 [무료 강의]</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/act1000_1/act1000_1_event&keywd=heng_toeiclectap6_1000_1_220504&logger_kw=heng_toeiclectap6_1000_1_220504">실전 1000제 1 [무료 강의]</a></li>
+          <li><a href="https://www.pagodastar.com/support/hit_lecture/target_lecture">파고다 월별 적중특강/총평(다양한 무료 컨텐츠들이 매월 올라온다.)</a></li>
+
+        </section>
+      </div>
     <footer>Copyright (c) 2023 Hanyang TOEIC</footer>
 </body>
 </html>

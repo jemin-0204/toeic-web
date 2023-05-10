@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+    margin: 0px;
+}
+header{
+    background-color: lightblue;
+    width: 100%;
+    height: 120px;
+}
+#logo{
+    margin: 0px;
+    text-align: center;
+}
+header ul{
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    list-style: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    height: 30px;
+}
+header ul li{
+    display: inline;
+    padding-right: 50px;
+    letter-spacing: 10px;
+    font-size: 15pt;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+#login {
+    padding-top: 40px;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+    background-color: rgb(207, 229, 243);
+}
+
+footer {
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
