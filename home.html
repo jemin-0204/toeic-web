@@ -3,6 +3,34 @@
 <head>
     <title>Hanyang TOEIC</title>
     <link type="text/css" rel="stylesheet" href="mystyle.css">
+    <script>
+        function next1() {
+            document.getElementById("image").src = "ETS 토익 정기시험 기출문제집 1000.jpg";
+            document.getElementById("text").innerHTML = "ETS 토익 정기시험 기출문제집 1000";
+            document.getElementById("text").href = "https://www.ybmbooks.com/book/book_view.asp?seq=2925&step_1=15&step_2=";
+
+            document.getElementById("b2").setAttribute("onclick", "next2()");
+        }
+        function next2() {
+            document.getElementById("image").src = "ETS 토익기출 파트별 VOCA.jpg";
+            document.getElementById("text").innerHTML = "ETS 토익기출 파트별 VOCA";
+            document.getElementById("text").href = "https://www.ybmbooks.com/book/book_view.asp?seq=2942&step_1=15&step_2=";
+
+            document.getElementById("b2").setAttribute("onclick", "next3()");
+        }
+        function next3() {
+            document.getElementById("image").src = "ETS 토익 단기공략 Part 7.jpg";
+            document.getElementById("text").innerHTML = "ETS 토익 단기공략 Part 7";
+            document.getElementById("text").href = "https://www.ybmbooks.com/book/book_view.asp?seq=2945&step_1=15&step_2=";
+        }
+        function reset() {
+            document.getElementById("image").src = "해커스 토익 기출 보카.jpg";
+            document.getElementById("text").innerHTML = "해커스 토익 기출 보카";
+            document.getElementById("text").href = "https://www.hackers.co.kr/?m=bookmanager&quick=N&uid=614";
+
+            document.getElementById("b2").setAttribute("onclick", "next1()");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -16,40 +44,42 @@
             <li><a href="상급페이지.html">상급</a></li>
         </ul>
     </header>
-    <aside id="login">
-        <h1>Log In</h1>
-        <form action="..." method="post">
-            아이디 <input type="text" id="id"><br>
-            비밀번호 <input type="password" id="password">
-            <input type="submit" value="로그인"><br>
-            <a href="#" target="_self">회원가입</a> <!-- 위치설정 필요 -->
-        </form>
-    </aside>
     <aside id="test">
         <h1>Level Test</h1>
         <button type="button" onclick="location.href='#'">하러가기</button> <!-- 위치설정 필요-->
         <button type="button" onclick="location.href='#'">건너뛰기</button> <!-- 위치설정 필요-->
     </aside>
+    <aside id="book">
+        <h1>교재</h1>
+        <p>
+            <img id="image" src="해커스 토익 기출 보카.jpg" width="120" height="150"><br>
+            <a id="text" href="https://www.hackers.co.kr/?m=bookmanager&quick=N&uid=614" target="_blank">
+                해커스 토익 기출 보카    
+            </a><br>
+        </p>
+        <button id="b1" onclick="reset()">처음으로</button>
+        <button id="b2" onclick="next1()">다음</button>
+    </aside>
     <div class="container">
         <section id="tip">
           <h1>TOEIC Tip</h1>
-          <li><a href="https://velog.io/@joshkim1201/%ED%86%A0%EC%9D%B5-990%EC%A0%90-%ED%95%A9%EA%B2%A9%EC%88%98%EA%B8%B0">토익 990점 합격수기</a></li>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_board/B_TOEIC_secret&date_filter=04.25&uid=803138&best=1">700점대 올라가고 싶은 토린이들 주목~!</a></li>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_board/B_TOEIC_secret&date_filter=04.25&uid=768810&best=1">토익 섹션별 공부 비법!</a></li>
-          <li><a href="https://www.toeicstory.co.kr/category/PLUS">팁</a></li>
-          <li><a href="https://www.toeicstory.co.kr/category/TOEIC%20Inside">수강생 인터뷰</a></li>
-          <li><a href="https://www.toeicstory.co.kr/category/NOTICE">YBM 이벤트 및 각종 정보</a></li>
+          <li><a href="https://velog.io/@joshkim1201/%ED%86%A0%EC%9D%B5-990%EC%A0%90-%ED%95%A9%EA%B2%A9%EC%88%98%EA%B8%B0" target="_blank">토익 990점 합격수기</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_board/B_TOEIC_secret&date_filter=04.25&uid=803138&best=1" target="_blank">700점대 올라가고 싶은 토린이들 주목~!</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_board/B_TOEIC_secret&date_filter=04.25&uid=768810&best=1" target="_blank">토익 섹션별 공부 비법!</a></li>
+          <li><a href="https://www.toeicstory.co.kr/category/PLUS" target="_blank">팁</a></li>
+          <li><a href="https://www.toeicstory.co.kr/category/TOEIC%20Inside" target="_blank">수강생 인터뷰</a></li>
+          <li><a href="https://www.toeicstory.co.kr/category/NOTICE" target="_blank">YBM 이벤트 및 각종 정보</a></li>
 
         </section>
         <section id="free">
           <h1>무료 콘텐츠</h1>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_study/drc">매일 토익 RC 풀기 + LC 풀기</a></li>
-          <li><a href="https://www.hackers.co.kr/?mod=fullservice_toeic_voca&keywd=heng_submain_lnb_toeic_voca&logger_kw=heng_submain_lnb_toeic_voca">정기 토익시험 기출단어</a></li>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/voca_game/voca_new/voca_2016&keywd=haceng_submain_lnb_toeic_voca_2016&logger_kw=haceng_submain_lnb_toeic_voca_2016">해커스토익 기출보카 TEST</a></li>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/toeic_basic_listening">왕기초 리스닝 [무료 강의]</a></li>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/toeic_startmovie/staFrt_2020/start_2020_event&keywd=heng_toeiclectap2_startRC_220504&logger_kw=heng_toeiclectap2_startRC_220504">입문 리딩 [무료 강의]</a></li>
-          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/act1000_1/act1000_1_event&keywd=heng_toeiclectap6_1000_1_220504&logger_kw=heng_toeiclectap6_1000_1_220504">실전 1000제 1 [무료 강의]</a></li>
-          <li><a href="https://www.pagodastar.com/support/hit_lecture/target_lecture">파고다 월별 적중특강/총평(다양한 무료 컨텐츠들이 매월 올라온다.)</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_study/drc" target="_blank">매일 토익 RC 풀기 + LC 풀기</a></li>
+          <li><a href="https://www.hackers.co.kr/?mod=fullservice_toeic_voca&keywd=heng_submain_lnb_toeic_voca&logger_kw=heng_submain_lnb_toeic_voca" target="_blank">정기 토익시험 기출단어</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/voca_game/voca_new/voca_2016&keywd=haceng_submain_lnb_toeic_voca_2016&logger_kw=haceng_submain_lnb_toeic_voca_2016" target="_blank">해커스토익 기출보카 TEST</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/toeic_basic_listening" target="_blank">왕기초 리스닝 [무료 강의]</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/toeic_startmovie/staFrt_2020/start_2020_event&keywd=heng_toeiclectap2_startRC_220504&logger_kw=heng_toeiclectap2_startRC_220504" target="_blank">입문 리딩 [무료 강의]</a></li>
+          <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_movie/act1000_1/act1000_1_event&keywd=heng_toeiclectap6_1000_1_220504&logger_kw=heng_toeiclectap6_1000_1_220504" target="_blank">실전 1000제 1 [무료 강의]</a></li>
+          <li><a href="https://www.pagodastar.com/support/hit_lecture/target_lecture" target="_blank">파고다 월별 적중특강/총평(다양한 무료 컨텐츠들이 매월 올라온다.)</a></li>
 
         </section>
       </div>
