@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+ <h1>Level Test</h1>
+ <p> 1. We hope to add two ----- graphic designers to our advertising team by May 1</p>
+ <form name="form">
+  <input type="radio" name="answer" value="v1">a) Extensive<br>
+  <input type="radio" name="answer" value="v2">b) Remaining<br>
+  <input type="radio" name="answer" value="v3">c) Composed<br>
+  <input type="radio" name="answer" value="v4">d) experienced<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFunction1()">
+ </form>
+ <p id="check"></p>
+ <script type="text/javascript">
+  function myFunction1() {
+   if(form.answer[3].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+   else document.getElementById("check").innerHTML="오답입니다.";
+  }
+ </script>
+
+ <p> 2. The ----- of Potowac Enterprises is to provide superior custiomer service.  </p>
+ <form name="form1">
+    <input type="radio" name="answer1" value="v5">a) Assignment<br>
+    <input type="radio" name="answer1" value="v6">b) Mission<br>
+    <input type="radio" name="answer1" value="v7">c) Scheme<br>
+    <input type="radio" name="answer1" value="v8">d) Journey<br>
+    <input type="button" name="선택" value="정답확인" onclick="myFunction2()">
+   </form>
+   <p id="check1"></p>
+   <script type="text/javascript">
+    function myFunction2() {
+     if(form1.answer1[1].checked==true) document.getElementById("check1").innerHTML="정답입니다.";
+     else document.getElementById("check1").innerHTML="오답입니다.";
+    }
+   </script>
+
+<p> 3. In autumn, the amazing colors of the ginkgo trees ----- tourists from across the globe.</p>
+<form name="form2">
+   <input type="radio" name="answer2" value="v9">a) Attraction<br>
+   <input type="radio" name="answer2" value="v10">b) Attract<br>
+   <input type="radio" name="answer2" value="v11">c) Attractive<br>
+   <input type="radio" name="answer2" value="v12">d) Attracting<br>
+   <input type="button" name="선택" value="정답확인" onclick="myFunction3()">
+  </form>
+  <p id="check2"></p>
+  <script type="text/javascript">
+   function myFunction3() {
+    if(form2.answer2[1].checked==true) document.getElementById("check2").innerHTML="정답입니다.";
+    else document.getElementById("check2").innerHTML="오답입니다.";
+   }
+  </script>
+
+<p> 4. The Saskatchewan Journal of Medicine just published a ----- on the negative effects of prolonged sitting.</p>
+<form name="form3">
+   <input type="radio" name="answer3" value="v13">a) Research<br>
+   <input type="radio" name="answer3" value="v14">b) Participant<br>
+   <input type="radio" name="answer3" value="v15">c) Study<br>
+   <input type="radio" name="answer3" value="v16">d) Request<br>
+   <input type="button" name="선택" value="정답확인" onclick="myFunction4()">
+  </form>
+  <p id="check3"></p>
+  <script type="text/javascript">
+   function myFunction4() {
+    if(form3.answer3[2].checked==true) document.getElementById("check3").innerHTML="정답입니다.";
+    else document.getElementById("check3").innerHTML="오답입니다.";
+   }
+  </script>
+</body>
+
+<p> 정답개수 4개: 상급
+    정답개수 2~3개: 중급
+    정답개수 0~1개: 초급
+</p>
+</html>
