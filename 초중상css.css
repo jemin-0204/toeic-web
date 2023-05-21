@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(252, 239, 224);
 }
 header{
     background-color: skyblue;
@@ -9,6 +10,33 @@ header{
     padding: 0;
     
 }
+#zero{
+    color: bisque;
+}
+header ul{
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    list-style: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    height: 30px;
+}
+header ul li{
+    display: inline;
+    padding-right: 50px;
+    letter-spacing: 10px;
+    font-size: 15pt;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+header ul li a:hover {
+    text-decoration: underline;
+}
+
 a{
     text-decoration: none;
 }
@@ -36,12 +64,15 @@ a{
 h2, h3{
     text-align: center;
 }
+h2{
+    padding-top: 35px;
+}
 
 table, tr, td{
     border: 1px solid black;
     border-collapse: collapse;
-    border-radius: 10px;
     text-align: center;
+    background-color: #dae1ec;
 }
 table{
     width: 300px;
@@ -77,4 +108,15 @@ div{
 }
 .menu:hover{
     background-color: wheat;
+}
+
+#lec{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: whitesmoke;
+    float: left;
+    width: 100%;
 }
