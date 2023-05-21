@@ -4,7 +4,7 @@ body{
     background-color: rgb(252, 239, 224);
 }
 header{
-    background-color: skyblue;
+    background-color: lightblue;
     height: 150px;
     margin: 0;
     padding: 0;
@@ -44,6 +44,7 @@ a{
 #logo{
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 .header{
     text-align: center;
