@@ -8,7 +8,7 @@
 <body>
     <header>
         <p id="logo">
-            <img src="mainlogo.png" width="300" height="100"></a>
+            <img src="logo.png" width="300" height="100"></a>
         </p>
         <ul>
             <li><a href="home.html">HOME</a></li>
@@ -18,19 +18,25 @@
         </ul>
     </header>
     <aside id="test">
-        <h1>Level Test</h1>
-        <button type="button" onclick="location.href='Leveltest.html'">하러가기</button>
+        <div id="level">
+            <h1>Level Test</h1><br><br>
+            <p>간단한 문제들로 빠르게 실력 TEST!</p>
+            <button type="button" onclick="location.href='Leveltest.html'" class="b0">Let's go!</button> <!-- 위치설정 필요-->
+            <button type="button" onclick="location.href='#'" class="b0">Skip..</button> <!-- 위치설정 필요-->
+        </div>    
     </aside>
     <aside id="book">
-        <h1>교재</h1>
-        <p>
-            <img id="image" src="해커스 토익 기출 보카.jpg" width="120" height="150"><br>
-            <a id="text" href="https://www.hackers.co.kr/?m=bookmanager&quick=N&uid=614" target="_blank">
-                해커스 토익 기출 보카    
-            </a><br>
-        </p>
-        <button id="b1" onclick="reset()">처음으로</button>
-        <button id="b2" onclick="next1()">다음</button>
+        <div id="bo">
+            <h1>Books</h1>
+            <p>
+                <img id="image" src="해커스 토익 기출 보카.jpg" width="120" height="150"><br>
+                <a id="text" href="https://www.hackers.co.kr/?m=bookmanager&quick=N&uid=614" target="_blank">
+                    해커스 토익 기출 보카    
+                </a><br>
+            </p>
+            <button id="b1" onclick="reset()">처음으로</button>
+            <button id="b2" onclick="next1()">다음</button>
+        </div>
     </aside>
     <div class="container">
         <section id="tip">
@@ -44,7 +50,7 @@
 
         </section>
         <section id="free">
-          <h1>무료 콘텐츠</h1>
+          <h1>Free contents</h1>
           <li><a href="https://www.hackers.co.kr/?c=s_toeic/toeic_study/drc" target="_blank">매일 토익 RC 풀기 + LC 풀기</a></li>
           <li><a href="https://www.hackers.co.kr/?mod=fullservice_toeic_voca&keywd=heng_submain_lnb_toeic_voca&logger_kw=heng_submain_lnb_toeic_voca" target="_blank">정기 토익시험 기출단어</a></li>
           <li><a href="https://www.hackers.co.kr/?c=s_toeic/voca_game/voca_new/voca_2016&keywd=haceng_submain_lnb_toeic_voca_2016&logger_kw=haceng_submain_lnb_toeic_voca_2016" target="_blank">해커스토익 기출보카 TEST</a></li>
