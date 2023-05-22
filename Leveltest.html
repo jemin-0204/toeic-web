@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>퀴즈 프로그램 만들기</title>
+ <script src="test_script.js"></script>
 </head>
 <body>
  <h1>Level Test</h1>
@@ -15,12 +16,6 @@
   <input type="button" name="선택" value="정답확인" onclick="myFunction1()">
  </form>
  <p id="check"></p>
- <script type="text/javascript">
-  function myFunction1() {
-   if(form.answer[3].checked==true) document.getElementById("check").innerHTML="정답입니다.";
-   else document.getElementById("check").innerHTML="오답입니다.";
-  }
- </script>
 
  <p> 2. The ----- of Potowac Enterprises is to provide superior custiomer service.  </p>
  <form name="form1">
@@ -31,12 +26,6 @@
     <input type="button" name="선택" value="정답확인" onclick="myFunction2()">
    </form>
    <p id="check1"></p>
-   <script type="text/javascript">
-    function myFunction2() {
-     if(form1.answer1[1].checked==true) document.getElementById("check1").innerHTML="정답입니다.";
-     else document.getElementById("check1").innerHTML="오답입니다.";
-    }
-   </script>
 
 <p> 3. In autumn, the amazing colors of the ginkgo trees ----- tourists from across the globe.</p>
 <form name="form2">
@@ -47,12 +36,6 @@
    <input type="button" name="선택" value="정답확인" onclick="myFunction3()">
   </form>
   <p id="check2"></p>
-  <script type="text/javascript">
-   function myFunction3() {
-    if(form2.answer2[1].checked==true) document.getElementById("check2").innerHTML="정답입니다.";
-    else document.getElementById("check2").innerHTML="오답입니다.";
-   }
-  </script>
 
 <p> 4. The Saskatchewan Journal of Medicine just published a ----- on the negative effects of prolonged sitting.</p>
 <form name="form3">
@@ -63,12 +46,6 @@
    <input type="button" name="선택" value="정답확인" onclick="myFunction4()">
   </form>
   <p id="check3"></p>
-  <script type="text/javascript">
-   function myFunction4() {
-    if(form3.answer3[2].checked==true) document.getElementById("check3").innerHTML="정답입니다.";
-    else document.getElementById("check3").innerHTML="오답입니다.";
-   }
-  </script>
 </body>
 
 <p> 정답개수 4개: 상급
