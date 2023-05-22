@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #0d86ff;
+    padding: 10px;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+#test {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#level button {
+    background-color: #0000ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#book {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bo img {
+    margin-bottom: 10px;
+}
+
+#bo a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+#bo button {
+    background-color: #0000ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#tip,
+    #free {
+        background-color: #f0f8ff;
+        padding: 20px;
+        margin-right: 20px;
+        width: 50%;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+#tip h1,
+#free h1 {
+    color: #0000ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#tip li,
+#free li {
+    margin-bottom: 5px;
+    color: #333;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 5px;
+}
+
+#tip li:last-child,
+#free li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#tip li a,
+#free li a {
+    color: #0000ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#tip li a:hover,
+#free li a:hover {
+    color: #0099ff;
+}
+
+
+footer {
+    background-color: #f0f8ff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
